@@ -1,0 +1,181 @@
+/* Reset body styles for better control and responsive behavior */
+body {
+    font-family: Arial, sans-serif; /* Change to your preferred font */
+    background-color: #D3D9D4; /* Light background color for better contrast */
+    color: #333; /* Dark text color for better readability */
+    line-height: 1.6; /* Increased line height for better text readability */
+    padding: 20px; /* Padding around the content */
+    background-image: url; /* Adjust the path accordingly */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content at the top */
+    zoom: 85%;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Row to contain the form and contact info side by side */
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap; /* Ensure they stay side-by-side */
+}
+
+/* Contact Form styling */
+.contact-form {
+    flex: 1; /* Takes up 50% of the width on large screens */
+    min-width: 500px; /* Ensures the form has a minimum width */
+    background-color: #2E1518; /* Dark background for form */
+    color: #DA7B93; /* Light text color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for form */
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    color: #DA7B93; /* Light pinkish color for headings */
+}
+
+/* Contact Information styling */
+.contact-info {
+    background-color: #376E6F; /* Dark background */
+    color: black;  /* Light text color */
+    padding: 10px;  /* Some padding for spacing */
+    text-align: right;  /* Align content to the right */
+}
+
+.contact-info h3 {
+    margin-top: 20px;
+    color: #DA7B93; /* Light pinkish color for headings */
+}
+
+/* Google Maps container */
+.map-container {
+    margin-top: 20px;
+}
+
+/* Social Media and other links */
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #DA7B93; /* Use the pinkish color for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #376E6F; /* Slightly cooler tone on hover */
+}
+
+/* Form and Button styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #376E6F; /* Cool tone for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2F4454; /* Darker cool tone on hover */
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    /* On smaller screens (tablets and phones), stack the contact form and info vertically */
+    .contact-row {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        min-width: 100%;
+    }
+
+    .map-container iframe {
+        width: 100%; /* Adjust iframe width for smaller screens */
+        height: 300px; /* Set iframe height for better scaling */
+    }
+}
+
+.route-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.provinces {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px; /* Optional: Limit the width of the provinces column */
+    background-color: #2E1518; /* Dark background for province column */
+    color: #DA7B93; /* Light text for contrast */
+    border-radius: 10px;
+}
+
+.map {
+    flex: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.province {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+/* Footer */
+.footer {
+    text-align: center; /* Center the footer text */
+}
+
+.custom-footer {
+    background-color: #376E6F; /* Using the cool tone for the footer */
+    color: black; /* Light text on dark background */
+    padding: 5px 0; /* Add some padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Ensure footer spans the full width */
+    margin: 0;
+    height: 80px; /* Optional: Set a specific height */
+    display: flex; /* Flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 10px 0;
+}
